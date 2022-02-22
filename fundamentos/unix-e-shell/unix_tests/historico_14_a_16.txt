@@ -1,0 +1,4 @@
+  560  cat > skills.txt
+  561  head -5 skills.txt 
+  562  tail -4 skills.txt 
+  563  rm *.txt

@@ -1,0 +1,15 @@
+  537  cd Part\ 1\ -\ Criação\ de\ arquivo\ e\ diretório/
+  538  mkdir unix-teste
+  539  cd unix-teste/
+  540  touch trybe.txt
+  541  cp trybe.txt trybe_backup.txt
+  542  mv trybe.txt trybe_renomeado.txt
+  543  mkdir backup
+  544  mv trybe_backup.txt backup/
+  545  mkdir backup2
+  546  mv backup/trybe_backup.txt backup2/
+  547  mrdir backup
+  548  rmdir backup/
+  549  mv backup2/ backup
+  550  pwd
+  551  ls

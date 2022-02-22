@@ -1,0 +1,19 @@
+  616  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  617  ls
+  618  less -n countries.txt 
+  619  grep -i 'zambia' countries.txt 
+  620  grep -in 'zambia' countries.txt 
+  621  grep -i 'brazil' countries.txt 
+  622  grep -in 'brazil' countries.txt 
+  623  cat > phrases.txt
+  624  grep -iv 'fox' phrases.txt 
+  625  wc -w phrases.txt 
+  626  wc -l phrases.txt 
+  627  touch empty.tbt empty.pdf
+  628  ls
+  629  ls '.txt'
+  630  ls .txt
+  631  ls '*.txt'
+  632  ls *.txt
+  633  ls *.t?t
+  634  man ls
