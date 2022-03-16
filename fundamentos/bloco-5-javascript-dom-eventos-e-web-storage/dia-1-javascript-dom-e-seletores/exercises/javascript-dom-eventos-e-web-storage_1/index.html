@@ -80,6 +80,14 @@
        }
        corrigirTexto ();
 
+       function imprimeConsole () {
+           let paragrafos = document.getElementsByTagName('p');
+           for (elemento of paragrafos) {
+               console.log(elemento);
+           }
+       }
+       imprimeConsole ();
+
     </script>
   </body>
 </html>
