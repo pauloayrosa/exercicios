@@ -54,6 +54,10 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       function mudarTexto (filtro, texto) {
+           document.querySelector(filtro).innerText = texto;
+       }
+       mudarTexto('p', 'quero estar trabalahndo numa tech muito massa!')
     </script>
   </body>
 </html>
