@@ -55,9 +55,17 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        function mudarTexto (filtro, texto) {
-           document.querySelector(filtro).innerText = texto;
+           document.getElementsByTagName(filtro)[1].innerText = texto;
        }
        mudarTexto('p', 'quero estar trabalahndo numa tech muito massa!')
+
+       function quadradoVerde (){
+           let mudarCor = document.getElementsByClassName('main-content');
+           for (item of mudarCor) {
+               item.style.backgroundColor = 'rgb(76,164,109)';
+           }
+       }
+       quadradoVerde();
     </script>
   </body>
 </html>
