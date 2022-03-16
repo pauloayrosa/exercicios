@@ -80,6 +80,14 @@
        }
        corrigirTexto ();
 
+       function maiusculas () {
+           let caixaAlta = document.getElementsByTagName('p');
+           for(paragrafos of caixaAlta) {
+               paragrafos.style = 'text-transform: uppercase';
+           }
+       }
+       maiusculas ();
+
        function imprimeConsole () {
            let paragrafos = document.getElementsByTagName('p');
            for (elemento of paragrafos) {
