@@ -82,7 +82,16 @@
         imagem.setAttribute('alt', 'imagem randómica!!!.');
         imagem.className = 'small-image';
         secaoEsquerda.appendChild(imagem);
-
+        let listaUl = document.createElement('ul');
+        listaUl.className = 'lista-ul';
+        secaoDireita.appendChild(listaUl);
+        let arrayDeNumeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for(numero of arrayDeNumeros) {
+          let linhaDoNumero = document.createElement('li');
+          linhaDoNumero.innerText = numero;
+          listaUl.appendChild(linhaDoNumero);
+        }
+        
     </script>
   </body>
 </html>
