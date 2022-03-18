@@ -65,6 +65,12 @@
         let principal = document.createElement('main');
         principal.className = 'main-content';
         corpo.appendChild(principal);
+        let secaoCentro = document.createElement('section');
+        secaoCentro.classList = 'center-content';
+        principal.appendChild(secaoCentro);
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = 'Texo do paragrafo determinado no quesito 4.';
+        secaoCentro.appendChild(paragrafo);
 
     </script>
   </body>
