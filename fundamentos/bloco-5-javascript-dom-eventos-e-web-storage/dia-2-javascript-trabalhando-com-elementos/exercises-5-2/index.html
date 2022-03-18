@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+      <script>
+        let titulo = document.createElement('h1');
+        let texto = document.createTextNode('Exercício 5.2 - JavaScript DOM');
+        titulo.appendChild(texto);
+        let corpo = document.querySelector('body');
+        corpo.appendChild(titulo);
+        let principal = document.createElement('main');
+        principal.className = 'main-content';
+        corpo.appendChild(principal);
+        let secaoCentro = document.createElement('section');
+        secaoCentro.classList = 'center-content';
+        principal.appendChild(secaoCentro);
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = 'Texo do paragrafo determinado no quesito 4.';
+        secaoCentro.appendChild(paragrafo);
+        let secaoEsquerda = document.createElement('section');
+        secaoEsquerda.className = 'left-content';
+        principal.appendChild(secaoEsquerda);
+        let secaoDireita = document.createElement('section');
+        secaoDireita.className = 'right-content';
+        principal.appendChild(secaoDireita);
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://picsum.photos/200');
+        imagem.setAttribute('alt', 'imagem randómica!!!.');
+        imagem.className = 'small-image';
+        secaoEsquerda.appendChild(imagem);
+        let listaUl = document.createElement('ul');
+        listaUl.className = 'lista-ul';
+        secaoDireita.appendChild(listaUl);
+        let arrayDeNumeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for(numero of arrayDeNumeros) {
+          let linhaDoNumero = document.createElement('li');
+          linhaDoNumero.innerText = numero;
+          listaUl.appendChild(linhaDoNumero);
+        }
+        let h3Primeira = document.createElement('h3');
+        let h3Segunda = document.createElement('h3');
+        let h3Terceira = document.createElement('h3');
+        principal.appendChild(h3Primeira);
+        principal.appendChild(h3Segunda);
+        principal.appendChild(h3Terceira);
+        titulo.className = ('title');
+        h3Primeira.className = ('description');
+        h3Segunda.className = ('description');
+        h3Terceira.className = ('description');
+        principal.removeChild(secaoEsquerda);
+        secaoDireita.style = 'margin-right: auto';
+        secaoCentro.style = 'background-color: green';
+        listaUl.removeChild(listaUl.lastElementChild);
+        listaUl.removeChild(listaUl.lastElementChild);
+    </script>
+  </body>
+</html>
