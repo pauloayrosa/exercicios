@@ -1,0 +1,66 @@
+Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
+Salvador, 24 de marco de 2022
+
+COURSE:
+
+HTML & CSS - Forms
+
+? Formulario HTML = forma de enviar dados para outra pagina ou servidor.
+
+Parte I - Introdução
+
+tag's: input, button, textarea, select, form...
+ Requisitos: get e post.
+ 
+ teg form ><
+ 	propriedade da teg form:
+ 		action="":diz para onde os dados deste fomulario serao enviados. ex.: nome de outra pagina ou lugar....
+ 		method="": dialog / GET (dados enviados pela HTML)/ POST (criptografia)
+ 	 input <> - propriedades: type="": text , name="" serve como chave dos valores inseridos
+ 	 button>< - propriedades: type="": submit
+
+Parte II - input tag, types e attributes
+
+	input-tyoe="" - diz qual o tipo de dados...
+			ex. test, button; checkbox; color; date; datetime;
+			 datetime-local; email; number; password; 
+			 radio; range; reset; search; submit...
+		"text" - texto simples de até uma linha.
+		"file" - input de anexos (foto, arquivo...).
+			OBS. quando usado com o metodo POST usar o atributo:
+			(enctype="multipart/form-data").
+		"password" - recebe senhas se revelar explicida mente seu conteudo.
+		 "checkbox" - quadrado a ser marcado (como item checado). podem ser
+		 	agrupados e todos os seus irmãos pode ser marcados ou não.
+		 "radio" - quado em grupo de irãos apenas um  pode ser selecionado
+		 	como em gabarito de prova objetiva (a, b, c, d, e).
+		checkde - propriedade/atributo de já vir marcado por padrão. muito
+			usado para checkbox, radio, number, color...
+		placeholder="" - texto de exemplo dentro da lacuna do input
+		required - o capo se torna obrigatorio, so vai ser submetido de 
+			se preenchido.
+	     * value="" - preenchido por padrao, podendo ser editado e forçando
+			o 'placeholder' sem efeito. outra obs.: é que para checkbox
+			radio... o value guarda o valor/dado a ser manipudado como
+			retorno do input.
+	     * name="" - (ref l.19) serve como chave dos valores inseridos, e esse
+			nome que acompanha o dados na URL (Objeto-chave/valor).
+			Paro o caso de elementos irmãos: checkbox ou radio...
+			o name de todos os inrãos devem ser iguais
+		class="" - refere-se a uma classe de estilo css.
+		id="" - refere-se ao identificador único (chave/valor).
+	tag - label >< - dá nome ao campo do formulário (input, checkbox,
+			  textarea...)
+		for="" - recebe o id do campo vinculado (ex.: tag input).
+	tag - textarea >< - área de texto de dimecoes formataveis, pode receber
+		  	  váreas linhas, iclusive: quebra de linha e Enter.
+		  name="", id="", class=""
+		  cols="" - quantidade de colunas.
+		  rows="" - quantidade de linas. A quantidade de linhas interfere
+		  	  nas dimenções da apresentação do retangulo reservado 
+		  	  à entrada de dados.
+	tag - select >< - funciona no estilo dropdown, onde vai ter várias opções
+			(com outra tag filha option >< - o atributo value recebe o
+			 dados a ser manipulado).
+	tag - button >< - do type="submit" (>Enviar<) - para submeter o formulário!
+		
