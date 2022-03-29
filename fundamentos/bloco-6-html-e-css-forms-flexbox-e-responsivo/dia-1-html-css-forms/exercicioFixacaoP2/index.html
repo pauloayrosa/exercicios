@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixar</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Vamos praticar um pouco, criando uma tela de login? 🔥</h1>
+    </header>
+    <main>
+        <form action="" method="get" autocomplete="on">
+            <!-- 1 - Adicione os campos de entrada para email e senha. -->
+                <!-- referência - "https://www.w3schools.com/tags/att_input_type_email.asp" -->
+            <div class="login">
+                <label for="email">Enter your email:</label>
+                <!-- 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha. -->
+                <!-- 5 - Adicione o atributo required para os campos de email e senha. -->
+                <!-- 6 - Adicione o atributo autocomplete="off" para o campo de email. -->
+                    <!-- referência - "https://www.w3schools.com/tags/att_input_autocomplete.asp"
+                    O autocompleteatributo especifica se um campo de entrada deve ou não ter o preenchimento automático ativado. -->
+                <!-- 7 - Adicione o atributo autofocus para o campo de email. -->
+                    <!-- referência - "https://www.w3schools.com/tags/att_input_autofocus.asp" -->
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required autocomplete="off" autofocus>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="lembrar">
+                    <!-- 2 - Adicione um checkbox com o texto Lembre-me . -->
+                </div>
+                <input type="checkbox" name="lembrar" id="lembrar" checked>
+                <label for="lembrar">Lembrar meu usuario</label>
+                <!-- OBS !!! Ao colocar o label em seguida ao input/checkbox o rotulo funciona como  area do elemento para selecionar a lacuna. -->
+                <div class="entrar">
+                <!-- 3 - Adicione um botão com o texto Entrar . -->
+                <button type="submit">Entrar</button>
+            </div>
+            
+        </form>
+    </main>
+</body>
+</html>

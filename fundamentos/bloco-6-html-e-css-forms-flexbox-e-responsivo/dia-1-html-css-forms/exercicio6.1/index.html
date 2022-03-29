@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio6.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Trybe Trip</h1>
+    </header>
+    <main id="formulario">
+        <form action="" method="get">
+            <fieldset>
+                <div class="inputBox">
+                    
+                    <div class="name">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="destino">
+                        <label for="destino">
+                            <input type="radio" name="destino" id="cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="radio" name="destino" id="campo">
+                            <label for="campo">Campo</label>
+                            <input type="radio" name="destino" id="praia" checked>
+                            <label for="praia">Praia</label>
+                            <input type="radio" name="destino" id="montanhas">
+                            <label for="montanhas">Montanhas</label>
+                        </label>
+                    </div>
+                    <div class="resposta">
+                        <label for="resposta"></label>
+                        <textarea name="resposta" id="reaposta" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="data">
+                        <label for="data">Qual a melhor data para viajar?</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+                    <div class="malaDireta">
+                        <input type="checkbox" name="malaDireta" id="mala-direta" checked>
+                        <label for="mala-direta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+                    </div>
+                    <div class="divulgarImagens">
+                        <input type="checkbox" name="divulgarImagens" id="divulgar-imagens"checked>
+                        <label for="divulgar-imagens">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="botoes">
+                <button type="submit" id="enviar">Enviar</button>
+                <button type="reset" id="apagar">Apagar</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
