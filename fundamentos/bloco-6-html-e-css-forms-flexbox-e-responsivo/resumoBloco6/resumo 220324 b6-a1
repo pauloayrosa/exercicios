@@ -66,3 +66,30 @@ Parte II - input tag, types e attributes
 		
 Parte III - Criando um formulário completo
 
+Parte IV - Entenda o prevent default
+
+metodo preventDefault() do event.preventDefault().
+
+	Quando criamos uma função para retornar/capturar um valor do input e precionamos o botão type="submit" a página sofre um reeset. para permanecer com este valor armazenado vamos utilizar o parametro event.preventDefaul();
+
+		function função(event) {
+			event.preventDefault();
+			nameUser.innerHTML = inputNameUser.value;
+		}
+	Com este método o <button type="submit"> NÃO envia nem reeset a página (que é o comportamento padrão!).
+
+	no brawser/navegador, dentro de inspecionar (click botão dirito do mouse/F12) console settings, marque ()Preserv log
+
+
+Quando precionamos o botão de '<button type="submit">' o conteudo do formulário é enviado e a página é atualizada. 
+
+para pegar o texto de um <input ="text">: crie uma variavel => 
+	let inputNameUser = document.querySelector("#inputNameUser");
+crie uma variável/(elemento HTML), parágrafo por exemplo, para receber o texto:
+	const nameUser = document.querySelector("#nameUser");
+junte os dous:
+	nameUser.innerHTML = inputNameUser.value;
+
+O atributo target="_blank" quando click em um link (<a>, <button>...) a nova página será em uma nova aba do navegador.
+	Ex.:"<a href="www.betrybe.com" target="_blank" id="href">TRYBE</a>"
+

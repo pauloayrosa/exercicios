@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco6.1-parte3</title>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <div class="nomrCompleto">
+            <label for="nome-completo">Nome Copleto</label>
+            <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required autofocus>
+        </div>
+        <div class="email">
+            <label for="input-email">E-mail</label>
+            <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="inputEstados">
+            <label for="input-estado">Estado onde você mora:</label>
+            <select name="estado" id="input-estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg"> Minas Gerais</option>
+                <option value="ap" selected>Amapá</option>
+                <option value="rs">Rio Grande do Sul</option>
+            </select>
+        </div>
+        <div id="input-foto">
+            <p>Selecione sua foto</p>
+            <input type="file" name="foto" id="foto-perfil">
+        </div>
+        <div id="comidas-favoritas">
+            <p>Comida Favorita</p>
+                <input type="radio" id="sorvete" name="favorita" value="sorvet" checked>            
+                <label for="sorvete">Sorvete</label>
+                <input type="radio" id="pizza" name="favorita" value="pizza">            
+                <label for="pizza">Pizza</label>
+                <input type="radio" id="paoDeQueijo" name="favorita" value="pao-de-queijo">            
+                <label for="paoDeQueijo">Pão de queijo</label>
+                <input type="radio" id="acaraje" name="favorita" value="acaraje">            
+                <label for="acaraje">Acarajé</label>
+                <input type="radio" id="outra" name="favorita" value="outra">            
+                <label for="outra">Outra</label>
+        </div>
+        <div id="sobrVoce">
+            <p>Escreva sobre você</p>
+            <textarea name="sobre-mim" id="sobreMim" cols="30" rows="10" placeholder="Fale sobre você..."></textarea>
+        </div>
+        <div class="login">
+            <p>Digite sua senha:</p>
+            <label for="input-senha">Senha</label>
+            <input type="password" name="senha" id="input-senha" required>
+        </div>
+        <div class="promocoes">
+            <input type="checkbox" name="promocao" id="checkbox-noticias" checked>
+            <label for="checkbox-noticas">Receba noticias de promoções Incríveis!</label>
+        </div>
+        <div class="enviar">
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
